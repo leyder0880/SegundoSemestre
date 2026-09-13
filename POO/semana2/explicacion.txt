@@ -1,0 +1,66 @@
+Clases en JAVA
+
+ej: Estudiante
+¿Cuales serian los atributos de un estudiante?
+
+nombre
+edad
+id
+cedula
+semestre
+carrera
+facultad
+---------------------------------------
+int id1 = 279636; 
+String nombre= "Juan";
+
+int id2 = 305698; 
+String nombre= "Maria";
+
+int id3 = 269354; 
+String nombre= "Julian";
+
+***Problemas***
+Muchas variables 
+Propenso a errores 
+Desordenado
+Que pasa si tuviera 100 estudiantes? complejo crear uno a uno
+
+En java los comentarios de una sola linea se hacen con "//"
+Ej: 
+//Comentarios de una sola linea
+
+En java los comentarios de varias linea se hacen con "/* */"
+Ej: 
+/* Este es un
+comentario de 
+varias lineas */
+
+Una clase es una fabrica de objetos
+tambien se conoce como una plantilla para crear objetos.
+
+¿Cuantos objetos puedo crear apartir de la clase Estudiante? Muchos
+
+Atributos (caracteristicas) de las siguientes clases
+**Pelicula
+titulo
+genero
+duracion
+fechaEstreno o lanzamiento
+
+
+**Vehiculo
+modelo
+marca
+año
+categoria
+color 
+peso 
+
+**CuentaBancaria
+saldo
+titular
+numeroCuenta
+tipoCuenta
+clave
+
