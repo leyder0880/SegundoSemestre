@@ -6,5 +6,5 @@ public class Estudiante {
     double nota;
 
 
-    
+  //Metodo mostarInformacion()  
 }
