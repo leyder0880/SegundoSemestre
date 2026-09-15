@@ -6,5 +6,14 @@ public class Estudiante {
     double nota;
 
 
-  //Metodo mostarInformacion()  
+  //Metodo mostarInformacion()
+    /* firma del método:
+       public : Es público
+       void : no retorna nada
+       mostrarInformacion() : Es el nombre del método, no recibe parámetros
+    */
+    public void mostrarInformacion(){
+        System.out.println("id: " + id);
+        System.out.println("nombre: " + nombre);
+        System.out.println("nota: " + nota);
 }
