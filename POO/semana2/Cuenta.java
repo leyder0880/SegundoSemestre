@@ -18,9 +18,22 @@ public class Cuenta {
     this.saldo = saldo;
   }
 
+  // Creación del método recargar
+  public void recargarCuenta(double cantidad) {
+    saldo += cantidad;
+  }
+
   public String toString() {
     return "Cuenta [ cedula:" + cedula + " nombre: " + nombre + " numerocuenta: " + numeroCuenta +
         " tipoCuenta: " + tipoCuenta + " saldo: " + saldo + "]";
+
   }
+  
+  //Creacion del metodo retirar
+    public void retirarDinero(double cantidad) {
+        saldo -= cantidad;
+    }
 
 }
+
+
