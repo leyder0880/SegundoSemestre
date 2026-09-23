@@ -17,3 +17,5 @@ public class Estudiante {
         System.out.println("nombre: " + nombre);
         System.out.println("nota: " + nota);
 }
+
+}
