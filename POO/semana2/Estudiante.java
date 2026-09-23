@@ -1,21 +1,29 @@
 public class Estudiante {
-
-//Atributos de la clase
-    int id;
-    String nombre;
-    double nota;
-
-
-  //Metodo mostarInformacion()
-    /* firma del método:
-       public : Es público
-       void : no retorna nada
-       mostrarInformacion() : Es el nombre del método, no recibe parámetros
-    */
-    public void mostrarInformacion(){
-        System.out.println("id: " + id);
-        System.out.println("nombre: " + nombre);
-        System.out.println("nota: " + nota);
-}
-
+  
+  //Atributos
+  private int id;
+  private String nombre;
+  private String curso;
+  private double nota1;
+  private double nota2;
+  private double nota3;
+  
+  //Constructor
+  public Estudiante(int id, String nombre, String curso, double nota1, double nota2, double nota3){
+    this.id = id;
+    this.nombre = nombre;
+    this.curso = curso;
+    this.nota1 = nota1;
+    this.nota2 = nota2;
+    this.nota3 = nota3;
+  }
+  
+  public double calcularPromedio(){
+    return (nota1 + nota2 + nota3) / 3;
+  }
+  
+  public String toString(){
+    return "Estudiante [ id: " + id + " nombre: " + nombre + " curso: " + curso +
+                       " nota1: " + nota1 + " nota2: " + nota2 + " nota3: " + nota3 + "]";
+  }
 }
