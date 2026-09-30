@@ -1,4 +1,4 @@
-public public class CalcularProducto {
+public class CalcularProducto {
  
     String codigo;
     String nombre;

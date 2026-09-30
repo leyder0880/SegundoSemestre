@@ -1,4 +1,4 @@
-public class Main {
+class Main {
  
     public static void main(String[] args) {
         Producto producto1 = new Producto();
@@ -22,18 +22,46 @@ public class Main {
  
         System.out.println("--- " + producto2.nombre + " ---");
         System.out.println("Total: " + producto2.calcularTotal());
-        System.out.println("¿Tiene Inventario? " + producto2.tieneIventario());
-        producto2.aplicarDescuento(150); 
+        System.out.println("¿Tiene Inventario? " + producto2.tieneInventario());
+        producto2.aplicarDescuento(150);
 
         // descuento inválido
-        producto2.aplicarDescuento(-5);  
-        
+        producto2.aplicarDescuento(-5);
+
         // descuento inválido
         System.out.println("Precio sin cambios: " + producto2.precio);
         producto2.aplicarDescuento(100);
-        
+
         // límite: precio queda en 0, nunca negativo
         System.out.println("Precio con 100% de descuento: " + producto2.precio);
+    }
+}
+
+class Producto {
+    String codigo;
+    String nombre;
+    double precio;
+    int cantidad;
+
+    public double calcularTotal() {
+        return precio * cantidad;
+    }
+
+    public boolean tieneInventario() {
+        return cantidad > 0;
+    }
+
+    public boolean tieneIventario() {
+        return tieneInventario();
+    }
+
+    public void aplicarDescuento(double porcentaje) {
+        if (porcentaje < 0 || porcentaje > 100) {
+            return;
+        }
+
+        double descuento = precio * porcentaje / 100;
+        precio = Math.max(0, precio - descuento);
     }
 }
 

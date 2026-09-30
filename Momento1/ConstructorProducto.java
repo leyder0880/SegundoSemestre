@@ -1,11 +1,11 @@
-public public class ConstructorProducto {
+public class ConstructorProducto {
  
     String codigo;
     String nombre;
     double precio;
     int cantidad;
  
-    public Producto(String codigo, String nombre, double precio, int cantidad) {
+    public ConstructorProducto(String codigo, String nombre, double precio, int cantidad) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;

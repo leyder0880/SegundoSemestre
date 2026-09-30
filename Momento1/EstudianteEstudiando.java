@@ -1,4 +1,4 @@
-public public class EstudianteEstudiando{
+public class EstudianteEstudiando{
  
     String nombre;
     int edad;
@@ -19,7 +19,5 @@ public public class EstudianteEstudiando{
     public void saludar(String mensaje) {
         System.out.println(nombre + " dice: " + mensaje);
     }
-}
- {
     
 }

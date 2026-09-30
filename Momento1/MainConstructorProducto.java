@@ -1,4 +1,4 @@
-public public class Main {
+class Main {
  
     public static void main(String[] args) {
         Producto producto1 = new Producto("P001", "Portátil", 1200000, 3);
@@ -21,4 +21,27 @@ public public class Main {
         System.out.println("Valor total del inventario: " + totalInventario);
     }
     
+}
+
+class Producto {
+    private final String codigo;
+    private final String nombre;
+    private final int precio;
+    private final int cantidad;
+
+    public Producto(String codigo, String nombre, int precio, int cantidad) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.cantidad = cantidad;
+    }
+
+    public void mostrarDatos() {
+        System.out.println("Código: " + codigo + ", Nombre: " + nombre
+                + ", Precio: " + precio + ", Cantidad: " + cantidad);
+    }
+
+    public int calcularTotal() {
+        return precio * cantidad;
+    }
 }

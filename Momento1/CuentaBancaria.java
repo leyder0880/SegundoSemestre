@@ -1,4 +1,4 @@
-public public class CuentaBancaria{
+public class CuentaBancaria{
  
     String titular;
     String numeroCuenta;
