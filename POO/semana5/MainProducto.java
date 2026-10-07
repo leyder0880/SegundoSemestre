@@ -8,11 +8,9 @@ public class MainProducto {
  
         System.out.println(producto1);
         System.out.println("Valor del inventario: " + producto1.calcularValorInventario());
-        System.out.println();
-        System.out.println(producto2);
+         System.out.println(producto2);
         System.out.println("Valor del inventario: " + producto2.calcularValorInventario());
-        System.out.println();
-        System.out.println(producto3);
+         System.out.println(producto3);
         System.out.println("Valor del inventario: " + producto3.calcularValorInventario());
     }
 }
