@@ -1,3 +1,5 @@
+package POO.semana5;
+
 public class Estudiante {
 
     private String nombre;
