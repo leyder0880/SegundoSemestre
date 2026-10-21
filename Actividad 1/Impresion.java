@@ -1,22 +1,11 @@
-public class Impresion {
-
-    private int numero;
+public class Impresion extends Producto {
     private String color;
-    private Object[] foto;
+    private Foto[] foto;
 
-    public Impresion(int numero, String color, Object[] foto) {
-
+    public Impresion(int numero, String color, Foto[] foto) {
         setNumero(numero);
         this.color = color;
         this.foto = foto;
-    }
-
-    public int getNumero() {
-        return numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
     }
 
     public String getColor() {
@@ -27,19 +16,17 @@ public class Impresion {
         this.color = color;
     }
 
-    public Object[] getFoto() {
+    public Foto[] getFoto() {
         return foto;
     }
 
-    public void setFoto(Object[] foto) {
+    public void setFoto(Foto[] foto) {
         this.foto = foto;
     }
 
     @Override
     public String toString() {
-        return "Impresion{numero=" + getNumero() + ", color='" + color + "', foto=" + java.util.Arrays.toString(foto) + "}";
+        return "Impresion{numero=" + getNumero() + ", color='" + color + "', foto=" +toString(foto) + "}";
     }
-
 }
-    
 

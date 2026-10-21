@@ -1,33 +1,29 @@
-import java.util.Date;
-
 public class Pedido {
-    
-    private Object cliente;
-    private Object producto;
+    private Cliente cliente;
+    private Producto[] producto;
     private Date fecha;
     private int numeroTarjetaCredito;
 
-    public Pedido(Object cliente, Object producto, Date fecha, int numeroTarjetaCredito) {
-
+    public Pedido(Cliente cliente, Producto[] producto, Date fecha, int numeroTarjetaCredito) {
         this.cliente = cliente;
         this.producto = producto;
         this.fecha = fecha;
         this.numeroTarjetaCredito = numeroTarjetaCredito;
     }
 
-    public Object getCliente() {
+    public Cliente getCliente() {
         return cliente;
     }
 
-    public void setCliente(Object cliente) {
+    public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
 
-    public Object getProducto() {
+    public Producto[] getProducto() {
         return producto;
     }
 
-    public void setProducto(Object producto) {
+    public void setProducto(Producto[] producto) {
         this.producto = producto;
     }
 
@@ -50,8 +46,9 @@ public class Pedido {
     @Override
     public String toString() {
         return "Pedido{cliente=" + cliente +
-            ", producto=" + producto +
+                ", producto=" + producto +
                 ", fecha=" + fecha +
                 ", numeroTarjetaCredito=" + numeroTarjetaCredito + "}";
     }
 }
+

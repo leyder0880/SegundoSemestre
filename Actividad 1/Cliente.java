@@ -1,9 +1,6 @@
 public class Cliente {
-    //Atributos del cliente
     private String cedula;
     private String nombre;
-
-    // Constructor 
 
     public Cliente(String cedula, String nombre) {
         this.cedula = cedula;
@@ -26,10 +23,9 @@ public class Cliente {
         this.nombre = nombre;
     }
 
-    @Override 
+    @Override
     public String toString() {
-        return "Cliente {cedula='" + cedula + "', nombre='" + nombre + "'}";
+        return "Cliente{cedula='" + cedula + "', nombre='" + nombre + "'}";
     }
 }
-
 
