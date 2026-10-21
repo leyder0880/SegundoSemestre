@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Pedido {
     private Cliente cliente;
     private Producto[] producto;
@@ -46,7 +48,7 @@ public class Pedido {
     @Override
     public String toString() {
         return "Pedido{cliente=" + cliente +
-                ", producto=" + producto +
+                ", producto=" + Arrays.toString(producto) +
                 ", fecha=" + fecha +
                 ", numeroTarjetaCredito=" + numeroTarjetaCredito + "}";
     }

@@ -1,20 +1,12 @@
-public class Camara{
-    private int numero;
+public class Camara extends Producto{
+    
     private String marca;
     private String modelo;
 
     public Camara(int numero, String marca, String modelo) {
-        setNumero(numero);
+        super(numero);
         this.marca = marca;
         this.modelo = modelo;
-    }
-
-    public int getNumero() {
-        return numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
     }
 
     public String toString() {

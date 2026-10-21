@@ -13,9 +13,9 @@ public class Foto {
         this.fichero = fichero;
     }
 
-    public void print() {
-        System.out.println("Imprimiendo foto: " + fichero);
+    @Override
+    public String toString() {
+        return "Foto{fichero='" + fichero + "'}";
     }
-
 }
 
