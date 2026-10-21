@@ -1,0 +1,17 @@
+public class Producto {
+    private int numero;
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    @Override
+    public String toString() {
+        return "numero=" + numero;
+    }
+}
+
