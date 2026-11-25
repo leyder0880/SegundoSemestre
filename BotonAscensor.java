@@ -1,25 +1,19 @@
-public class BotonAscensor {
+ public class BotonAscensor extends Boton {
 
-    private final int pisoDestino;
-    private boolean iluminado;
+    private int pisoDestino;
 
     public BotonAscensor(int pisoDestino) {
+        super();
         this.pisoDestino = pisoDestino;
     }
 
-    public int getPisoDestino() {
-        return pisoDestino;
-    }
-
-    public boolean isIluminado() {
-        return iluminado;
-    }
-
+    @Override
     public void presionar() {
-        iluminado = true;
-    }
-
-    public void apagarIndicador() {
-        iluminado = false;
+        encenderIndicador();
+        System.out.print("   Boton del piso " + pisoDestino + " presionado dentro del ascensor");
+        if (sonidoActivo) {
+            System.out.print(" *beep*");
+        }
+        System.out.println();
     }
 }

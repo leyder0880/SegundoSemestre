@@ -1,5 +1,5 @@
-public enum DireccionAscensor {
-    
+    public enum DireccionAscensor {
+
     ARRIBA(1),
     ABAJO(-1),
     NINGUNA(0);
@@ -14,3 +14,4 @@ public enum DireccionAscensor {
         return piso;
     }
 }
+        

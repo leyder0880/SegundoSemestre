@@ -1,4 +1,4 @@
-public abstract class Puerta {
+ public abstract class Puerta {
 
     protected boolean abierta;
     protected final SensorPuerta sensor;
@@ -19,7 +19,4 @@ public abstract class Puerta {
     public SensorPuerta getSensor() {
         return sensor;
     }
-}
-
-interface SensorPuerta {
 }
